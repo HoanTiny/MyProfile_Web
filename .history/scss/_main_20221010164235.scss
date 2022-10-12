@@ -1,0 +1,218 @@
+.main-content {
+    &_aboutme {
+        position: relative;
+        &--bg1 {
+            position: absolute;
+            width: 1010.66px;
+            height: 968.45px;
+            left: -102.28px;
+            top: -166px;
+            transform: rotate(0);
+            z-index: -1;
+        }
+
+        &--info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &-img {
+                width: 475px;
+                height: 653px;
+                margin-top: 100px;
+                margin-left: 60px;
+                /* Group 4 */
+                img {
+                    width: 475px;
+                    height: 653px;
+                    border-radius: 12px;
+                }
+            }
+            &-description {
+                margin-top: 100px;
+                margin-left: 60px;
+                h3 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 36px;
+                    color: $primary_color;
+                }
+                p {
+                    font-family: "Spartan";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 170%;
+                    /* or 41px */
+
+                    color: #000c24;
+                }
+                button {
+                    width: 170px;
+                    height: 53px;
+                    background: #000c24;
+                    border-radius: 4px;
+                    a {
+                        text-decoration: none;
+                        width: 122px;
+                        height: 21px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 128.7%;
+                        /* identical to box height, or 21px */
+
+                        letter-spacing: 0.0125em;
+
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    &_skills {
+        margin-top: 226px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &-bgskill {
+            position: absolute;
+            top: -400px;
+            right: -162px;
+            // width: 1521.03px;
+            // height: 947.23px;
+            // right: 0;
+            // top: 0;
+            // // background: #000c24;
+            // transform: matrix(-0.87, -0.52, -0.49, 0.86, 0, 0);
+        }
+        &-description {
+            h3 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 36px;
+                /* identical to box height */
+
+                color: #f44336;
+            }
+            p {
+                width: 617px;
+                height: 123px;
+
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 170%;
+                /* or 41px */
+
+                color: #000c24;
+            }
+            .skill-description {
+                width: 616px;
+                height: 288px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                &--fe {
+                    width: 160px;
+                    height: 160px;
+                    // background-color: $text_color;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 64px;
+                    span {
+                        margin-top: 12px;
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                    .outer {
+                        width: 160x;
+                        height: 160x;
+                        padding: 20px;
+                        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                            -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+                        // border: 1px solid $text_color;
+                        border-radius: 50%;
+                        .inner {
+                            width: 120px;
+                            height: 120px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.15),
+                                -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+                            // border: 1px solid $text_color;
+                            border-radius: 50%;
+                            #number {
+                                font-weight: 600;
+                                color: #000;
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                    circle {
+                        fill: none;
+                        stroke: url(#GradientColor);
+                        stroke-width: 20px;
+                        stroke-dasharray: 450;
+                        stroke-dashoffset: 450;
+                        animation: anim 2s linear forwards;
+                    }
+                    @keyframes anim {
+                        100% {
+                            stroke-dashoffset: 45;
+                        }
+                    }
+
+                    svg {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+
+                .skill-description--fe.js {
+                    @keyframes anim {
+                        100% {
+                            stroke-dashoffset: 45;
+                        }
+                    }
+                }
+                .skill-description--fe.html {
+                    @keyframes anim {
+                        100% {
+                            stroke-dashoffset: 90;
+                        }
+                    }
+                }
+                .skill-description--fe.sass {
+                    @keyframes anim {
+                        100% {
+                            stroke-dashoffset: 90;
+                        }
+                    }
+                }
+                .skill-description--fe.react {
+                    @keyframes anim {
+                        100% {
+                            stroke-dashoffset: 135;
+                        }
+                    }
+                }
+                .skill-description--fe.bootstrap {
+                    @keyframes anim {
+                        100% {
+                            stroke-dashoffset: 180;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

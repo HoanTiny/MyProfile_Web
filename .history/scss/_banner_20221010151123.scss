@@ -1,0 +1,59 @@
+.banner {
+    position: relative;
+    img {
+        width: 100%;
+    }
+    &-title {
+        &_name {
+            position: absolute;
+            width: 281px;
+            height: 43px;
+            left: 110.5px;
+            top: 335.5px;
+
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 38px;
+            line-height: 43px;
+            color: #000c24;
+            /* identical to box height */
+
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+
+            // border: 1.5px dashed #ffffff;\
+            // text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+            //     1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+            -webkit-text-stroke: 1px #fff;
+        }
+        &_description {
+            position: absolute;
+            width: 506px;
+            height: 27px;
+            left: 106.5px;
+            top: 394.5px;
+
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 27px;
+            /* identical to box height */
+
+            color: #ffffff;
+        }
+    }
+    &-social {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 18px;
+
+        position: absolute;
+        width: 198.14px;
+        height: 36.03px;
+        left: 109px;
+        top: 453.48px;
+    }
+}

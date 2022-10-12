@@ -1,0 +1,86 @@
+.main-content {
+    &_aboutme {
+        position: relative;
+        &--bg1 {
+            position: absolute;
+            width: 1010.66px;
+            height: 968.45px;
+            left: -102.28px;
+            top: -166px;
+            transform: rotate(0);
+            z-index: -1;
+        }
+
+        &--info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &-img {
+                width: 475px;
+                height: 653px;
+                margin-top: 100px;
+                margin-left: 60px;
+                /* Group 4 */
+                img {
+                    width: 475px;
+                    height: 653px;
+                    border-radius: 12px;
+                }
+            }
+            &-description {
+                margin-top: 100px;
+                margin-left: 60px;
+                h3 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 36px;
+                    color: $primary_color;
+                }
+                p {
+                    font-family: "Spartan";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 170%;
+                    /* or 41px */
+
+                    color: #000c24;
+                }
+                button {
+                    width: 170px;
+                    height: 53px;
+                    background: #000c24;
+                    border-radius: 4px;
+                    a {
+                        text-decoration: none;
+                        width: 122px;
+                        height: 21px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 128.7%;
+                        /* identical to box height, or 21px */
+
+                        letter-spacing: 0.0125em;
+
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    &_skills {
+        &-description {
+            h3 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 36px;
+                /* identical to box height */
+
+                color: #f44336;
+            }
+        }
+    }
+}

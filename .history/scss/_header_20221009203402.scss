@@ -1,0 +1,43 @@
+@import "variables";
+.header {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    .navbar {
+        .nav-item {
+            a {
+                font-size: 21.4px;
+                font-weight: 500;
+                font-style: $font;
+                color: $grey_color;
+            }
+            a.active {
+                color: $primary_color;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    background-color: $white_color;
+                    width: 100%;
+                    height: 40px;
+                }
+            }
+        }
+        .d-flex {
+            button {
+                border-radius: 6px;
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+svg {
+    position: absolute;
+    width: 2105.52px;
+    height: 982.02px;
+    left: -0.59px;
+    top: 0px;
+}

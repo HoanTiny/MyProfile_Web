@@ -1,0 +1,78 @@
+@import "variables";
+.header {
+    position: relative;
+    z-index: 1;
+    background-color: #000c24;
+    background-image: linear-gradient(90deg, #000c24 0%, #ffffff 100%);
+
+    height: 100px;
+    line-height: 100px;
+    .navbar {
+        .nav-item {
+            margin-right: 76px;
+            a {
+                font-size: 21.4px;
+                font-weight: 500;
+                font-style: $font;
+                color: $white_color;
+            }
+            a.active {
+                color: $primary_color;
+                position: relative;
+                z-index: 2;
+                &::before {
+                    position: absolute;
+                    content: url(../img/Group\ 50.png);
+                    // background-color: $white_color;
+                    height: 40px;
+                    width: 100%;
+                    // height: 40px;
+                    z-index: -1;
+                    left: -40px;
+                    top: -10px;
+                }
+            }
+        }
+        .d-flex {
+            button {
+                border-radius: 6px;
+                background-color: #000c24;
+                a {
+                    text-decoration: none;
+                    color: $white_color;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    position: relative;
+    img {
+        width: 100%;
+    }
+    &-title {
+        &_name {
+            position: absolute;
+            width: 281px;
+            height: 43px;
+            left: 110.5px;
+            top: 335.5px;
+
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 38px;
+            line-height: 43px;
+            /* identical to box height */
+
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+
+            // border: 1.5px dashed #ffffff;\
+            text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+                1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-family: $font;
+    color: $text_color;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.8rem;
+}
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #000;
+}
+
+.container {
+    max-width: 1258px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+body {
+}
